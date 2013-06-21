@@ -111,8 +111,8 @@ class Jira_Issue
      */
     public function getSummary()
     {
-        if (isset($this->fields['Summary'])) {
-            return $this->fields['Summary'];
+        if (isset($this->fields['summary'])) {
+            return $this->fields['summary'];
         }
     }
 
@@ -196,8 +196,8 @@ class Jira_Issue
      */
     public function getDescription()
     {
-        if (isset($this->fields['Description'])) {
-            return $this->fields['Description'];
+        if (isset($this->fields['description'])) {
+            return $this->fields['description'];
         }
     }
 
