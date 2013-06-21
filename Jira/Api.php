@@ -365,6 +365,10 @@ class Jira_Api
         			$debug
         	);
         if (strlen($result)) {
+            if ($isfile) {
+                return $result;
+            }
+            
             $json = json_decode($result, true);
             if ($this->options & self::AUTOMAP_FIELDS) {
                 if (isset($json['issues'])) {
